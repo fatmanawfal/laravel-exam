@@ -13,7 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('cars', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('color');
+            $table->string('type');
+            $table->integer('number')->unique();
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +30,7 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('cars');
+        
     }
 };
