@@ -10,6 +10,13 @@ theme: {
       fontFamily: {
           sans: ['Nunito', ...defaultTheme.fontFamily.sans],
       },
+        colors: {
+          blue : ['#1A56DB']
+        },
+       
+          objectPosition: {
+            'center-bottom': 'center bottom',
+          }
   },
 },
 plugins: [

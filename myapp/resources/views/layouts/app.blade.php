@@ -10,7 +10,10 @@
     </head>
 
     <body>
-        {{ $slot }}
+        @include('includes.navbar')
+       {{ $slot }}
+      
+        @include('includes.footer')
         <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
         @livewireScripts
     </body>
